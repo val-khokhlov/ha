@@ -14,5 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: make
-      run: nmake /f "ha.mak" CFG="ha - Win32 Release"
+      run: make /f "ha.mak" CFG="ha - Win32 Release"
       working-directory: ./win_msvc

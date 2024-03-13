@@ -1,0 +1,13 @@
+HA archiver port to Windows (win32) / Microsoft Visual C (MSVC)
+
+This port was made by val khokhlov just to be able to unpack old archives created in 90s, as the original HA version was 16-bit.
+It is based on DOS (Borland C) files found in pc/ with some changes and additions:
+1. File time functions in machine.c taken from the Unix version, as MSVC works with Unix time.
+2. Path handling functions retained from the DOS version, so the mask *.* is for all files and \ is directory separator.
+3. File attributes are read and set with Windows API functions, but only DOS attributes are supported by HA (see dir.h).
+4. As MSVC lacks dirent.h functionality, a simple dirent.c implementation was written with opendir(), readdir(), closedir().
+5. Nico de Vries (AIP-NL) Borland C++ 3.1 compatibility edits in c/acoder.c retained.
+
+Actually, HA works fine under Windows to my tests with two limitations known:
+1. File names converted to the lower case when archived (probably can get rid of it just like in Unix version).
+2. Long files names got stripped when files extracted from archives (maybe will be possible to remove 8.3 name limits).

@@ -1,0 +1,99 @@
+# Microsoft Developer Studio Generated Dependency File, included by ha.mak
+
+..\c\acoder.c : \
+	"..\include\acoder.h"\
+	"..\include\ha.h"\
+	"..\include\haio.h"\
+	"dir.h"\
+	"machine.h"\
+	
+
+..\c\archive.c : \
+	"..\include\archive.h"\
+	"..\include\ha.h"\
+	"..\include\haio.h"\
+	"dir.h"\
+	"machine.h"\
+	
+
+..\c\asc.c : \
+	"..\include\acoder.h"\
+	"..\include\asc.h"\
+	"..\include\ha.h"\
+	"..\include\haio.h"\
+	"..\include\swdict.h"\
+	"dir.h"\
+	"machine.h"\
+	
+
+..\c\cpy.c : \
+	"..\include\cpy.h"\
+	"..\include\ha.h"\
+	"..\include\haio.h"\
+	"dir.h"\
+	"machine.h"\
+	
+
+dirent.c : \
+	"\program files (x86)\microsoft visual studio\vc98\include\basetsd.h"\
+	"dir.h"\
+	"dirent.h"\
+	"machine.h"\
+	
+
+..\c\error.c : \
+	"..\include\ha.h"\
+	"dir.h"\
+	"machine.h"\
+	
+
+..\c\ha.c : \
+	"\program files (x86)\microsoft visual studio\vc98\include\basetsd.h"\
+	"..\include\archive.h"\
+	"..\include\asc.h"\
+	"..\include\cpy.h"\
+	"..\include\ha.h"\
+	"..\include\haio.h"\
+	"..\include\hsc.h"\
+	"dir.h"\
+	"dirent.h"\
+	"machine.h"\
+	
+
+..\c\haio.c : \
+	"..\include\ha.h"\
+	"..\include\haio.h"\
+	"dir.h"\
+	"machine.h"\
+	
+
+..\c\hsc.c : \
+	"..\include\acoder.h"\
+	"..\include\ha.h"\
+	"..\include\haio.h"\
+	"..\include\hsc.h"\
+	"dir.h"\
+	"machine.h"\
+	
+
+machine.c : \
+	"\program files (x86)\microsoft visual studio\vc98\include\basetsd.h"\
+	"..\include\archive.h"\
+	"..\include\ha.h"\
+	"dir.h"\
+	"machine.h"\
+	
+
+..\c\misc.c : \
+	"..\include\ha.h"\
+	"dir.h"\
+	"machine.h"\
+	
+
+..\c\swdict.c : \
+	"..\include\ha.h"\
+	"..\include\haio.h"\
+	"..\include\swdict.h"\
+	"dir.h"\
+	"machine.h"\
+	

@@ -2,7 +2,7 @@ HA archiver 0.999B
 
 This GitHub project was created to host HA archiver ports for people who desperately look for something to unpack their old archives created in 90s with HA.
 The original HA binary was for 16-bit DOS and can not be run on modern Windows. So I included here a Windows win32 port that can be compiled with Microsoft Visual C.
-A win32 HA.EXE binary is available under binaries/. Also, I created HA binaries for Linux, FreeBSD and OpenBSD, just in case someone needs them.
+A win32 HA.EXE binary is available in Releases section. Also, I created HA binaries for Linux, FreeBSD and OpenBSD, just in case someone needs them.
 
 The original README file by Harri Hirvola is below:
 

@@ -77,7 +77,7 @@ jobs:
     - name: Upload output file
       uses: actions/upload-artifact@v4
       with:
-        name: ha-${{ runner.os }}-${{ runner.arch }}
+        name: ha-${{ runner.os }}-${{ runner.arch }}-${{ matrix.c_compiler }}
         path: |
           ${{ steps.strings.outputs.build-output-dir }}/Release/ha.exe
           ${{ steps.strings.outputs.build-output-dir }}/ha

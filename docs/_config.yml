@@ -1,6 +1,0 @@
-remote_theme: pages-themes/minimal@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-title: HA archiver
-description: HA is an archiver which was developed by Harri Hirvola in 1990s. The last version released was 0.999 beta for DOS and Unix systems. This project contains all the original code by Harri Hirvola and extra sources to allow building a Windows version of HA.
-show_downloads: true

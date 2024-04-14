@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HA archiver | Windows version</title>
+    <meta property="og:title" content="HA archiver" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="HA is an archiver which was developed by Harri Hirvola in 1990s. The last version released was 0.999 beta for DOS and Unix systems. This project contains all the original code by Harri Hirvola and extra sources to allow building a Windows version of HA." />
+    <meta property="og:description" content="HA is an archiver which was developed by Harri Hirvola in 1990s. The last version released was 0.999 beta for DOS and Unix systems. This project contains all the original code by Harri Hirvola and extra sources to allow building a Windows version of HA." />
+    <link rel="canonical" href="https://val-khokhlov.github.io/ha/" />
+    <meta property="og:url" content="https://val-khokhlov.github.io/ha/" />
+    <meta property="og:site_name" content="HA archiver" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="HA archiver" />
+    <meta name="google-site-verification" content="wZJsiH-lJ6Tnqxioo0an-jS0BHpNTb5lckeAHhYXZLs" />
+
+<style>
+body { background-color:#ffffff; padding:50px; font:11pt "Tahoma", Helvetica, Arial, sans-serif; line-height: 1.5; color:#666666; }
+small { font-size:9pt; }
+p,ul,ol,table,pre,dl { margin:0 0 20px; }
+h1 { font-size:24pt; line-height:1.1; color:#222222; margin:0 0 20px; }
+h2 { font-size:14pt; line-height:1.1; color:#393939; margin:0 0 20px; }
+a { color:#267CB9; text-decoration:none; }
+a:hover { color:#006699; text-decoration: underline; }
+.wrapper { width:860px; margin:0 auto; }
+header { -webkit-font-smoothing:subpixel-antialiased; }
+div.downloads { display: flow-root; padding: 0 0 20px 0; }
+.downloads div { width: 91px; height:40px; float:left; background:#f4f4f4; border:1px solid #e0e0e0; border-radius:5px; margin: 1px; }
+.downloads a { line-height:1; font-size:11px; color:#676767; display:block; text-align:center; padding-top:6px; height:34px; }
+.downloads a strong { font-size:14px; display:block; color:#222222; }
+.downloads a:hover { color:#675C5C; font-weight:bold; box-shadow: 2px 2px 5px #888888; text-decoration: none; }
+.downloads div a:active { background-color:#e0e0e0; box-shadow: -2px -2px 5px #888888; }
+section { font-size: 10.5pt; padding: 20px 20px 0px; margin-bottom: 20px; border: solid 1px #e0e0e0; background: #fafafa; }
+footer{ -webkit-font-smoothing:subpixel-antialiased; }
+@media print, screen and (max-width: 960px){div.wrapper{width:100%;margin:0}}
+@media print, screen and (max-width: 720px){body{word-wrap:break-word}header{padding:0}}
+@media print, screen and (max-width: 480px){body{padding:15px}.downloads{width:99%}.downloads li{width:33%}}
+@media print{body{padding:0.4in;font-size:10pt;color:#000000;}section{font-size:80%;padding:6pt;}}
+</style>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="https://val-khokhlov.github.io/ha/">HA archiver</a></h1>
+        <p>HA is an archiver which was developed by Harri Hirvola in 1990s. The last version released was 0.999 beta for DOS and Unix systems. This project contains all the original code by Harri Hirvola and extra sources to allow building a Windows version of HA.</p>
+        <h2>Links &amp; Downloads</h2>
+        <div class="downloads">
+          <div><a href="https://github.com/val-khokhlov/ha"><strong>GitHub</strong> view project</a></div>
+          <div><a href="https://github.com/val-khokhlov/ha/zipball/main"><strong>Source</strong>ZIP File</a></div>
+          <div><a href="https://github.com/val-khokhlov/ha/tarball/main"><strong>Source</strong>TAR Ball</a></div>
+          <div><a href="https://github.com/val-khokhlov/ha/releases/download/v0.999b/ha.exe"><strong>Windows</strong>x86 .EXE</a></div>
+          <div><a href="https://github.com/val-khokhlov/ha/releases/download/v0.999b/ha-linux"><strong>Linux</strong>x86 Binary</a></div>
+          <div><a href="https://github.com/val-khokhlov/ha/releases/download/v0.999b/ha-linux-x86_64"><strong>Linux</strong>x86_64 Binary</a></div>
+          <div><a href="https://github.com/val-khokhlov/ha/releases/download/v0.999b/ha-linux-riscv64"><strong>Linux</strong>UCB RISC-V</a></div>
+          <div><a href="https://github.com/val-khokhlov/ha/releases/download/v0.999b/ha-freebsd"><strong>FreeBSD</strong>x86 Binary</a></div>
+          <div><a href="https://github.com/val-khokhlov/ha/releases/download/v0.999b/ha-openbsd"><strong>OpenBSD</strong>x86 Binary</a></div>
+        </div>
+        <h2>Note from the HA author</h2>
+      </header>
+      <section>
+
+      <p>HA is an archiver which I released in january 1993 as version 0.98.
+After that I had plans to improve speed, archive handling etc. which
+would have required total rewrite of the code. For that I unfortunately
+could not find time. Because there has been quite considerably interest
+for internals of HA (especially for the HSC compression method) I
+decided to make a source level release from my current test version
+(0.999 beta) and place it under GNU General Public License. The sources
+for this version are not very consistent or clean, but everything should
+work.</p>
+
+<p>There are several improvements which should be made before this could be
+called version 1.0. Some of the most obvious of these are:</p>
+<ul>
+  <li>Compression methods should be coded in assembler for PC and using more
+efficient data structures for 32 bit platforms. Current version does
+some things only to overcome 64kB segments of 8086.</li>
+  <li>UNIX port has still some problems and is missing some things (for example 
+a grouping operator in wildcard matches).</li>
+  <li>File handling is far from optimum.</li>
+  <li>Archive handling is not too clever either.</li>
+  <li>Testing should be done more thoroughly as there are many special cases 
+in compression routines which get used very rarely.</li>
+  <li>Documentation of code and algorithms is totally missing.</li>
+</ul>
+
+<p>This archive (ha0999.zip) contains this readme, MSDOS executable ha.exe
+and source files for HA 0.999beta. Ha.exe is NOT compiled directly from
+included sources. Some critical parts of it were compiled from hand
+optimized versions of compiler output. It is somewhat faster than "pure
+C" version.</p>
+
+<p>MSDOS sources are for Borland C 4.0 but older versions of bcc should
+work. Makefile needs some editing as some paths are hardcoded in it.
+UNIX sources are not very generic. I have only tested this using Linux
+on PC and AIX on IBM6000. Only compiler and make utility that I have
+tested are GCC and GNU MAKE.</p>
+
+<p>Porting HA should be fairly easy as all machine specific code is in
+machine.h and machine.c under machine specific directories. Md_funcs.txt
+documents these functions. Examples can be found from pc and nix
+directories.</p>
+
+<p>Email address where I can be reached is "harri.hirvola@vaisala.infonet.com".
+My email addresses have not been very stable and I would not be very 
+surprised if this one too is only valid for some months...</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Harri Hirvola</p>
+
+      </section>
+      <footer>
+        <p>View the Project on GitHub <a href="https://github.com/val-khokhlov/ha">https://github.com/val-khokhlov/ha</a>
+        | This project is maintained by <a href="https://github.com/val-khokhlov">val-khokhlov</a></p>
+        <p><small>Hosted on GitHub Pages</small></p>
+      </footer>
+    </div>
+<script>
+(function(document) {
+    var metas = document.getElementsByTagName('meta'),
+        changeViewportContent = function(content) {
+            for (var i = 0; i < metas.length; i++) {
+                if (metas[i].name == "viewport") {
+                    metas[i].content = content;
+                }
+            }
+        },
+        initialize = function() {
+            changeViewportContent("width=device-width, minimum-scale=1.0, maximum-scale=1.0");
+        },
+        gestureStart = function() {
+            changeViewportContent("width=device-width, minimum-scale=0.25, maximum-scale=1.6");
+        },
+        gestureEnd = function() {
+            initialize();
+        };
+
+
+    if (navigator.userAgent.match(/iPhone/i)) {
+        initialize();
+
+        document.addEventListener("touchstart", gestureStart, false);
+        document.addEventListener("touchend", gestureEnd, false);
+    }
+})(document);
+</script>
+  </body>
+</html>
